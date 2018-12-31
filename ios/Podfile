@@ -1,0 +1,4 @@
+target 'SimpleSynth' do
+    use_frameworks!
+    pod 'AudioKit', '~> 4.5'
+end
