@@ -12,4 +12,5 @@
 @interface RCT_EXTERN_MODULE(Metronome, NSObject)
 RCT_EXTERN_METHOD(pressPlay)
 RCT_EXTERN_METHOD(pressStop)
+RCT_EXTERN_METHOD(onSliderChange:(NSInteger *) value)
 @end

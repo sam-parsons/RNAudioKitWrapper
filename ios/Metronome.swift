@@ -31,6 +31,11 @@ class Metronome: NSObject {
     }
 
     @objc
+    func prepareToPlay() {
+
+    }
+
+    @objc
     func pressPlay() {
         print("play button pressed")
 
@@ -48,7 +53,7 @@ class Metronome: NSObject {
       
         // sequencer settings initiation
         sequencer.setLength(AKDuration(beats: 4))
-        sequencer.setTempo(120)
+        
         sequencer.enableLooping()
       
         for i in 0..<4 {
@@ -68,6 +73,12 @@ class Metronome: NSObject {
     func pressStop() {
         sequencer.stop()
         print("Press Stop")
+    }
+
+    @objc
+    func onSliderChange(_ value: Int) {
+        print("slider changed, value: ", value)
+        sequencer.setTempo(Double(value))
     }
   
     @objc

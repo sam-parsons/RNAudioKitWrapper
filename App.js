@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Button, View, NativeModules} from 'react-native';
+import {Platform, StyleSheet, Button, Text, Slider, View, NativeModules} from 'react-native';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -18,26 +18,46 @@ const instructions = Platform.select({
 
 console.log(NativeModules.Metronome)
 
-function pressPlay() {
-  NativeModules.Metronome.pressPlay()
-}
-
-function pressStop() {
-  NativeModules.Metronome.pressStop()
-}
 
 type Props = {};
 export default class App extends Component<Props> {
+  state = {
+    "tempo": 120
+  }
+
+  pressPlay() {
+    NativeModules.Metronome.pressPlay()
+  }
+
+  pressStop() {
+    NativeModules.Metronome.pressStop()
+  }
+
+  onSliderChange(value) {
+    console.log("tempo is: " + value);
+    this.setState({ tempo: value })
+    NativeModules.Metronome.onSliderChange(value)
+  }
+
   render() {
     return (
       <View style={styles.container}>
+        <Text>Tempo: {this.state.tempo}</Text>
+        <Slider
+          style={styles.slider}
+          minimumValue={30}
+          maximumValue={300}
+          step={1}
+          value={this.state.tempo}
+          onValueChange={(value) => {this.onSliderChange(value)}}
+        />
         <Button 
           title="Play"
-          onPress={pressPlay}
+          onPress={this.pressPlay}
         ></Button>
         <Button
           title="Stop"
-          onPress={pressStop}
+          onPress={this.pressStop}
         ></Button>
       </View>
     );
@@ -61,4 +81,7 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+  slider: {
+    width: 240,
+  }
 });
