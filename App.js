@@ -9,7 +9,6 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Button, View, NativeModules} from 'react-native';
 
-
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
@@ -17,22 +16,17 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-
-console.log(NativeModules.Synth)
+console.log(NativeModules.Metronome)
 
 function pressPlay() {
-  NativeModules.Synth.pressPlay()
+  NativeModules.Metronome.pressPlay()
 }
 
 function pressStop() {
-  NativeModules.Synth.pressStop()
+  NativeModules.Metronome.pressStop()
 }
 
-type Props = {
-  "play": "play",
-  "stop": "stop"
-};
-
+type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (

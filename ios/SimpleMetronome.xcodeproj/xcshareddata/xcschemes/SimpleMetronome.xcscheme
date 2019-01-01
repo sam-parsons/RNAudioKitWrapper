@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "SimpleSynth.app"
-               BlueprintName = "SimpleSynth"
-               ReferencedContainer = "container:SimpleSynth.xcodeproj">
+               BuildableName = "SimpleMetronome.app"
+               BlueprintName = "SimpleMetronome"
+               ReferencedContainer = "container:SimpleMetronome.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "SimpleSynthTests.xctest"
-               BlueprintName = "SimpleSynthTests"
-               ReferencedContainer = "container:SimpleSynth.xcodeproj">
+               BuildableName = "SimpleMetronomeTests.xctest"
+               BlueprintName = "SimpleMetronomeTests"
+               ReferencedContainer = "container:SimpleMetronome.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "SimpleSynthTests.xctest"
-               BlueprintName = "SimpleSynthTests"
-               ReferencedContainer = "container:SimpleSynth.xcodeproj">
+               BuildableName = "SimpleMetronomeTests.xctest"
+               BlueprintName = "SimpleMetronomeTests"
+               ReferencedContainer = "container:SimpleMetronome.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "SimpleSynth.app"
-            BlueprintName = "SimpleSynth"
-            ReferencedContainer = "container:SimpleSynth.xcodeproj">
+            BuildableName = "SimpleMetronome.app"
+            BlueprintName = "SimpleMetronome"
+            ReferencedContainer = "container:SimpleMetronome.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "SimpleSynth.app"
-            BlueprintName = "SimpleSynth"
-            ReferencedContainer = "container:SimpleSynth.xcodeproj">
+            BuildableName = "SimpleMetronome.app"
+            BlueprintName = "SimpleMetronome"
+            ReferencedContainer = "container:SimpleMetronome.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "SimpleSynth.app"
-            BlueprintName = "SimpleSynth"
-            ReferencedContainer = "container:SimpleSynth.xcodeproj">
+            BuildableName = "SimpleMetronome.app"
+            BlueprintName = "SimpleMetronome"
+            ReferencedContainer = "container:SimpleMetronome.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

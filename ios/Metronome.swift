@@ -1,16 +1,16 @@
 //
-//  Synth.swift
-//  SimpleSynth
+//  Metronome.swift
+//  SimpleMetronome
 //
-//  Created by Sam Parsons on 12/30/18.
+//  Created by Sam Parsons on 12/31/18.
 //  Copyright © 2018 Facebook. All rights reserved.
 //
 
 import Foundation
 import AudioKit
 
-@objc(Synth)
-class Synth: NSObject {
+@objc(Metronome)
+class Metronome: NSObject {
 
     // AudioKit objects and data
     var sequencer = AKSequencer()
@@ -24,10 +24,6 @@ class Synth: NSObject {
     let interval: TimeInterval = 0.5
     let minTaps: Int = 3
     var taps: [Double] = []
-  
-   
-  
-
   
     @objc
     func constantsToExport() -> [AnyHashable: Any]! {
@@ -70,9 +66,8 @@ class Synth: NSObject {
   
     @objc
     func pressStop() {
-    
         sequencer.stop()
-      
+        print("Press Stop")
     }
   
     @objc
