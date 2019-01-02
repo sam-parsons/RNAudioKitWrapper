@@ -13,4 +13,9 @@
 RCT_EXTERN_METHOD(pressPlay)
 RCT_EXTERN_METHOD(pressStop)
 RCT_EXTERN_METHOD(onSliderChange:(NSInteger *) value)
+RCT_EXTERN_METHOD(prepareToPlay)
+RCT_EXTERN_METHOD(onMeterChange:(NSInteger *) value)
+RCT_EXTERN_METHOD(onQuarterVolumeChange:(NSInteger *) value)
+RCT_EXTERN_METHOD(onEighthVolumeChange:(NSInteger *) value)
+RCT_EXTERN_METHOD(onSixteenthVolumeChange:(NSInteger *) value)
 @end
